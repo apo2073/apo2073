@@ -76,7 +76,7 @@
 
 ###
 
-<h3 align="left">😺 Lang</h3>
+<h3 align="center">😺 Lang</h3>
 
 ###
 
