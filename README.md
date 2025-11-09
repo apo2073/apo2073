@@ -20,7 +20,7 @@
 
 ###
 
-<h3 align="center">🛠️ Tech</h3>
+<h3 align="center">🛠️ Tools & Tech</h3>
 
 ###
 
