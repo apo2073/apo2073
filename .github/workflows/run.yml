@@ -21,4 +21,5 @@ jobs:
           plugin_languages: true
           plugin_isocalendar: true
           plugin_isocalendar_duration: full-year
+          plugin_wakatime: false
           plugin_wakatime_sections: projects, projects-graphs, languages, languages-graphs, editors
