@@ -1,0 +1,24 @@
+name: Profile
+on:
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # (optional) Run workflow manually
+  workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # template: terminal
+          token: ${{ secrets.PROFILE }}
+          user: as7ar
+          config_timezone: Asia/Korea
+          plugin_languages: true
+          plugin_isocalendar: true
+          plugin_isocalendar_duration: full-year
+          plugin_wakatime_sections: projects, projects-graphs, languages, languages-graphs, editors
